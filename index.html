@@ -1,87 +1,36 @@
-<script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+            
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
 
-    let playerScore = 0;
-    let computerScore = 0;
+        <div class="container">
+            <h3 id="result">Try your luck!</h3>
+        </div>
 
-    //randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’
-    //We’ll use this function in the game to make the computer’s play.
-    function computerPlay() {
-        const computerOptions = ["paper", "rock", "scissors"]
-        let randomChoice = Math.floor((Math.random() * 3));
-        let randomComputerChoice = computerOptions[randomChoice]
-
-        return randomComputerChoice
-    }
-
-
-    //function that plays a single round of Rock Paper Scissors
-    //and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
-    //Make your function case insensitive (so users can input rock, ROCK, RocK or any other variation)
-    function playRound(playerSelection, computerSelection) {
-        
-
-        if (playerSelection === "rock") {
-            if(computerSelection === "paper") {
-                computerScore += 1;
-                console.log("You lose, paper beats rock!")
-            }
-            else if(computerSelection === "rock") {
-                console.log("It's a tie!")
-            }
-            else {
-                console.log("Congratulations you won, rock beats scissors!")
-                playerScore += 1;
-            }
-        }
-
-        if (playerSelection === "paper"){
-            if(computerSelection === "scissors") {
-                computerScore += 1;
-                console.log("You lose, scissors beats paper!")
-            }
-            else if(computerSelection === "paper") {
-                console.log("It's a tie!")
-            }
-            else {
-                playerScore += 1;
-                console.log("Congratulations you won, paper beats rock!")
-            }
-        }
-
-        if (playerSelection === "scissors") {
-            if(computerSelection === "rock") {
-                computerScore += 1;
-                console.log("You lose, rock beats scissors!")
-            }
-            else if(computerSelection === "scissors") {
-                console.log("It's a tie!")
-            }
-            else {
-                playerScore += 1;
-                console.log("Congratulations you won, scissors beats paper!")
-            }
-        }
-
-    }
+        <div class="container">
+            <h2 id="finalResult"></h2>
+            <h3 id="playerScoreText">Player Score:<span id="playerScore"></span></h3>
+            <h3 id="computerScoreText">Computer Score:<span id="computerScore"></span></h3>
+        </div>
 
 
 
-    // runs the playRound function 5 times
-    for(let i = 0; i < 5; i++) {
-        playRound(window.prompt("Please select rock, paper or scissors").toLowerCase(),computerPlay())
-    }
+        <div class="container">
+            <div id="buttons">
+                <button class="button" id="paper" value="paper" onclick="playerChoiceButton(this.value)">PAPER</button>
+                <button class="button" id="rock" value="rock" onclick="playerChoiceButton(this.value)">ROCK</button>
+                <button class="button" id="scissors" value="scissors" onclick="playerChoiceButton(this.value)">SCISSORS</button>
+            </div>
+        </div>
 
-
-    // WIll check the final score and announce the winer
-    if (computerScore > playerScore) {
-        console.log("The Computer WON!")
-    }
-    else if(computerScore === playerScore){
-        console.log("It was a TIE!")
-    }
-    else {
-        console.log("The Player WON!")
-    }
-    
-
-</script>
+        <div class="container" id="refresh">
+            <button class="button" id="refreshButton" onclick="refreshPage()">REFRESH</button>
+        </div>
+     
+        <script src="script.js"></script>
+    </body>
+</html>

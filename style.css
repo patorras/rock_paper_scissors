@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ranchers&display=swap');
+* {
+    margin: 0;
+    line-height: 1.6;   
+    font-family: 'Ranchers', cursive;
+}
+
+body {
+    background:  #090a0f;
+    color: #bae8e8;
+    font-size: 4vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#buttons {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    width: 60%;
+    height: 15vh;
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#paper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 15vw;
+    height: 12.5vh;
+    margin: 20px;
+    border: 10px solid var(--base-color);
+    font-size: 6vh;
+    cursor: pointer;    
+}
+
+#rock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 30%;
+    height: 12.5vh;
+    margin: 20px;
+    border: 10px solid var(--base-color);
+    font-size: 6vh;
+    cursor: pointer;    
+}
+
+#scissors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 30%;
+    height: 12.5vh;
+    margin: 20px;
+    border: 10px solid var(--base-color);
+    font-size: 6vh;
+    cursor: pointer;    
+}
+
+#result {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+#finalResult {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#playerScoreText {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#computerScoreText {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#computerScore {
+    margin-left: 20px;
+}
+
+#playerScore {
+    margin-left: 20px;
+}
+
+#finalResult, #playerScoreText, #computerScoreText {
+    height: 10vh;
+}
+
+#refresh {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    width: 60%;
+    height: 15vh;
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+
+#refreshButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 120px;
+    margin: 20px;
+    border: 10px solid var(--base-color);
+    font-size: 6vh;
+    cursor: pointer;    
+}
+
+
