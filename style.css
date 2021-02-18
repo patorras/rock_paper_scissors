@@ -135,3 +135,107 @@ body {
 }
 
 
+/*media query*/
+ @media only screen and (max-width: 600px) {
+    #buttons {
+        flex-direction: column;
+        display: flex;
+        font-family: 'Bebas Neue', cursive;
+        width: 60%;
+        height: 15vh;
+        margin-left: 20%;
+        line-height: 1px;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+@media only screen and (max-width: 600px) {
+    #scissors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50%;
+        height: 12.5vh;
+        border: 10px solid var(--base-color);
+        font-size: 6vh;
+        cursor: pointer;   
+        margin: 5px;  
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #rock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50%;
+        height: 12.5vh;
+        border: 10px solid var(--base-color);
+        font-size: 6vh;
+        cursor: pointer;    
+        margin: 5px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #paper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50%;
+        height: 12.5vh;
+        border: 10px solid var(--base-color);
+        font-size: 6vh;
+        cursor: pointer;
+        margin: 5px;    
+        margin-top: 200px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #refreshButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width:100%;
+        height: 120px;
+        margin: 20px;
+        border: 10px solid var(--base-color);
+        font-size: 6vh;
+        cursor: pointer;    
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #refresh {
+        display: flex;
+        font-family: 'Bebas Neue', cursive;
+        width: 70%;
+        height: 15vh;
+        margin-top: 10px;
+        margin-left: 10%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 10vh;
+        padding-top: 10vh;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
